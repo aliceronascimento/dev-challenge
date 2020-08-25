@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+def mockitoVersion = "1.10.19"
+def junitVersion = "4.12"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:'+junitVersion
+    testImplementation 'org.mockito:mockito-all:'+mockitoVersion
+}
